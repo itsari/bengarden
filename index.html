@@ -4,89 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>גינת הירקות של בן</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
         background-color: #f0f0f0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
-      }
-      header {
-        background-color: #4caf50;
-        color: #ffffff;
-        text-align: center;
-        padding: 20px 0;
-      }
-      h1,
-      h2 {
-        margin: 0;
-      }
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 0 20px;
-        flex: 1; /* Allow the container to grow to fill the available space */
-      }
-      .section {
-        background-color: #ffffff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
       }
       footer {
         background-color: #333;
         color: #ffffff;
         text-align: center;
         padding: 10px 0;
-        width: 100%;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>גינת הירקות של בן</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="/">גינת הירקות של בן</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">על הגינה שלנו</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">הירקות שלנו</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  יומן
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/tomatoesJournal.html"
+                      >עגבניות</a
+                    >
+                  </li>
+                  <!-- <li><a class="dropdown-item" href="#">קישור 2</a></li>
+                  <li><a class="dropdown-item" href="#">קישור 3</a></li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="container">
-      <div class="section">
-        <h2>על הגינה שלנו</h2>
-        <p>
-          ברוכים הבאים לגינת הירקות שלנו! כאן אנו מגדלים מגוון של ירקות טעימים
-          ומזינים.
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>הירקות שלנו</h2>
-        <div class="vegetable">
-          <h3>עגבניות</h3>
-          <p>
-            עגבניות הן אחת מהירקות המועדפות עלינו לגדל. הן רב תכליתיות וניתן
-            להשתמש בהן בסלטים, רטבים וכריכים.
-          </p>
-          <img
-            src="/img/colorful-tomatoes-vegetables-fruits-are-growing-indoor-farm-vertical-farm.jpg"
-            alt="עגבניות"
-          />
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">על הגינה שלנו</h2>
+              <p class="card-text">
+                ברוכים הבאים לגינת הירקות שלנו! כאן אנו מגדלים מגוון של ירקות
+                טעימים ומזינים.
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- <div class="vegetable">
-          <h3>גזר</h3>
-          <p>גזרים הם צמחי מרכז ומתוקים, מושלמים לנשנוש או להוספה למרקים ועקשנים.</p>
-          <img src="carrots.jpg" alt="גזר">
-      </div> -->
-        <!-- Add more vegetables here -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">הירקות שלנו</h2>
+              <div class="vegetable">
+                <h3>עגבניות</h3>
+                <p>
+                  עגבניות הן אחת מהירקות המועדפות עלינו לגדל. הן רב תכליתיות
+                  וניתן להשתמש בהן בסלטים, רטבים וכריכים.
+                </p>
+                <img
+                  src="/img/colorful-tomatoes-vegetables-fruits-are-growing-indoor-farm-vertical-farm.jpg"
+                  alt="עגבניות"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer>
-      <p>&copy; 2024 גינת הירקות של בן</p>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">&copy; 2024 גינת הירקות של בן</span>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
