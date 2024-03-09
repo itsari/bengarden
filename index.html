@@ -10,6 +10,9 @@
         margin: 0;
         padding: 0;
         background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
       }
       header {
         background-color: #4caf50;
@@ -25,6 +28,7 @@
         max-width: 800px;
         margin: 20px auto;
         padding: 0 20px;
+        flex: 1; /* Allow the container to grow to fill the available space */
       }
       .section {
         background-color: #ffffff;
@@ -41,8 +45,6 @@
         color: #ffffff;
         text-align: center;
         padding: 10px 0;
-        position: absolute;
-        bottom: 0;
         width: 100%;
       }
     </style>
@@ -60,7 +62,7 @@
           ומזינים.
         </p>
         <p>
-          הגינה שלנו היא פרויקט ביפי וחינוכי עבור הילדים. הם לומדים על זריעה,
+          הגינה שלנו היא פרויקט כיף וחינוכי עבור הילדים. הם לומדים על זריעה,
           טיפוח וקטיפה של הירקות שלהם.
         </p>
       </div>
@@ -79,16 +81,16 @@
           />
         </div>
         <!-- <div class="vegetable">
-            <h3>גזר</h3>
-            <p>גזרים הם צמחי מרכז ומתוקים, מושלמים לנשנוש או להוספה למרקים ועקשנים.</p>
-            <img src="carrots.jpg" alt="גזר">
-        </div> -->
+          <h3>גזר</h3>
+          <p>גזרים הם צמחי מרכז ומתוקים, מושלמים לנשנוש או להוספה למרקים ועקשנים.</p>
+          <img src="carrots.jpg" alt="גזר">
+      </div> -->
         <!-- Add more vegetables here -->
       </div>
     </div>
 
     <footer>
-      <p>&copy; 2024 גינת הירקות של בן</p>
+      <p>&copy; 2024 גינת הירקות של הילד</p>
     </footer>
   </body>
 </html>
